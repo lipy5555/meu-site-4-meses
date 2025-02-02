@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Amor - 4 Meses</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Caveat', cursive;
+            background-color: #000;
+            text-align: center;
+            padding: 50px;
+            color: white;
+        }
+        .container {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            color: #ff4081;
+        }
+        p {
+            font-size: 24px;
+            color: #ddd;
+            text-align: justify;
+        }
+        .heart {
+            font-size: 50px;
+            color: red;
+        }
+        #timer {
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function updateTimer() {
+            const startDate = new Date("2024-10-19T00:00:00");
+            const now = new Date();
+            const diff = now - startDate;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").innerHTML = `Estamos juntos há: ${days} dias, ${hours} horas, ${minutes} minutos e ${seconds} segundos!`;
+        }
+        setInterval(updateTimer, 1000);
+    </script>
+</head>
+<body onload="updateTimer()">
+    <div class="container">
+        <h1>Feliz 4 meses, meu amor! ❤️</h1>
+        <p>Minha princesa,</p>
+        <p>Hoje é um dia tão especial, mais um marco na nossa linda jornada juntos. Estamos completando 4 meses de amor, cumplicidade e momentos inesquecíveis. Parece que foi ontem que nossos olhares se cruzaram e nossos corações decidiram caminhar lado a lado. Mas ao mesmo tempo, sinto como se te conhecesse desde sempre, como se cada batida do meu coração fosse feita para se encaixar perfeitamente na melodia do seu.</p>
+        <p>Amor, você tem sido a melhor parte da minha vida. Seu sorriso ilumina meus dias, seu abraço me dá paz, sua voz é a melodia que me acalma. Eu sou tão grato por cada instante ao seu lado, por cada riso compartilhado, por cada conversa sincera, por cada sonho que construímos juntos. Você é a minha inspiração, minha força, meu maior presente de Deus.</p>
+        <p>Nesses 4 meses, passamos por tantas coisas, momentos bons e outros desafiadores, mas em todos eles o nosso amor foi a luz que nos guiou. Você me ensina todos os dias o verdadeiro significado do amor, do companheirismo, da paciência e do cuidado. E como eu te amo por isso! Amo seu jeito único, sua doçura, sua intensidade, sua forma de ver o mundo e de me fazer sentir o homem mais amado do universo.</p>
+        <p>E sabe do que mais? Meu amor por você só cresce! Eu quero continuar ao seu lado, segurando sua mão em cada passo da nossa caminhada, sonhando com você, realizando ao seu lado, sendo sua fortaleza, seu porto seguro e seu eterno namorado.</p>
+        <p>Obrigado por ser você, por me amar, por confiar em nós. Que Deus continue abençoando nossa história, fortalecendo nosso amor e nos guiando sempre pelo melhor caminho.</p>
+        <p class="heart">❤️❤️❤️</p>
+    </div>
+    <p id="timer"></p>
+</body>
+</html>
